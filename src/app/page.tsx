@@ -145,22 +145,38 @@ export default function Home() {
           </motion.div>
           
           <motion.div 
-            className="flex-1 w-full relative"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.25, ease: 'easeOut' }}
+            className="flex-1 w-full relative group"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-[0px_4px_40px_rgba(26,35,64,0.1)] aspect-[4/3] w-full bg-gray-50">
-              <Image 
-                alt="Student studying" 
-                className="object-cover" 
-                src="/images/hero-image.png"
-                fill
-                priority={true}
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              {/* Soft bottom fade-out gradient to blend image into the white page background */}
-              <div className="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-white via-white/50 to-transparent pointer-events-none"></div>
+            {/* Decorative Dotted Grid behind the image card */}
+            <div className="absolute -left-6 -bottom-6 w-32 h-32 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:12px_12px] opacity-60 pointer-events-none rounded-xl"></div>
+            
+            {/* Ambient Glow behind the card */}
+            <div className="absolute -inset-4 bg-gradient-to-tr from-[#E8192C]/10 via-transparent to-[#0097A7]/10 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+            
+            {/* Main Card with 1px Gradient Border */}
+            <div className="relative p-[1px] rounded-2xl bg-gradient-to-tr from-[#E8192C]/30 via-gray-200 to-[#0097A7]/30 shadow-2xl transition-all duration-500 ease-out group-hover:shadow-[0px_20px_50px_rgba(26,35,64,0.15)] group-hover:scale-[1.01] aspect-[4/3] w-full overflow-hidden">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gray-50">
+                <Image 
+                  alt="Student studying" 
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+                  src="/images/hero-image.png"
+                  fill
+                  priority={true}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                
+                {/* Subtle bottom fade-out gradient overlay to blend image borders */}
+                <div className="absolute inset-x-0 bottom-0 h-[15%] bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+              </div>
+            </div>
+
+            {/* Floating Glassmorphism Badge */}
+            <div className="absolute -top-4 -right-4 backdrop-blur-md bg-white/80 border border-white/30 px-4 py-2.5 rounded-2xl shadow-lg flex items-center gap-2.5 animate-float pointer-events-none z-20">
+              <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></div>
+              <span className="font-[family-name:var(--font-dm-sans)] text-[12px] font-bold text-[#1B2A6B] tracking-[0.05em] uppercase">COE Success 2026</span>
             </div>
           </motion.div>
         </div>
