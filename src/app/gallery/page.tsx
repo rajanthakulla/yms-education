@@ -9,7 +9,7 @@ import TwoToneHeading from '@/components/TwoToneHeading';
 interface GalleryItem {
   id: number;
   title: string;
-  category: 'Campus Life' | 'Classrooms' | 'Japan' | 'Cultural Events';
+  category: 'Events' | 'Sports' | 'Success';
   img: string;
   desc: string;
 }
@@ -18,70 +18,70 @@ const FALLBACK_ITEMS: GalleryItem[] = [
   {
     id: 1,
     title: "Language Program Certification",
-    category: "Campus Life",
+    category: "Success",
     img: "/images/gallery/certification-1.jpg",
     desc: "Students receiving their Japanese language course completion certificates."
   },
   {
     id: 2,
     title: "JLPT Certificate Distribution",
-    category: "Campus Life",
+    category: "Success",
     img: "/images/gallery/certification-2.jpg",
     desc: "Celebrating student successes in the JLPT exam achievements."
   },
   {
     id: 3,
     title: "Interactive Study Sessions",
-    category: "Classrooms",
+    category: "Events",
     img: "/images/gallery/college-1.jpg",
     desc: "A look inside our modern Japanese language classrooms."
   },
   {
     id: 4,
     title: "Japanese Culture & Orientation Seminars",
-    category: "Cultural Events",
+    category: "Events",
     img: "/images/gallery/event-1.jpg",
     desc: "Students participating in cultural exchange orientations."
   },
   {
     id: 5,
     title: "Annual Cultural Festivities",
-    category: "Cultural Events",
+    category: "Events",
     img: "/images/gallery/event-2.jpg",
     desc: "Celebrating traditional Japanese cultural events and festivals."
   },
   {
     id: 6,
     title: "Pre-departure Orientation Program",
-    category: "Cultural Events",
+    category: "Events",
     img: "/images/gallery/event-3.jpg",
     desc: "Preparing students for their upcoming academic journey in Japan."
   },
   {
     id: 7,
     title: "Language Classes & Presentations",
-    category: "Classrooms",
+    category: "Events",
     img: "/images/gallery/event-4.jpg",
     desc: "Interactive presentation sessions to build confidence in speaking Japanese."
   },
   {
     id: 8,
     title: "Community & Interaction Program",
-    category: "Cultural Events",
+    category: "Events",
     img: "/images/gallery/event-5.jpg",
     desc: "Student engagement and group discussions during cultural sessions."
   },
   {
     id: 9,
     title: "Visa Success Stories Celebrations",
-    category: "Campus Life",
+    category: "Success",
     img: "/images/gallery/success-1.jpg",
     desc: "YMS students celebrating high visa success rates for Japan."
   },
   {
     id: 10,
     title: "Alumni Gathering and Send-offs",
-    category: "Campus Life",
+    category: "Success",
     img: "/images/gallery/success-2.jpg",
     desc: "Wishing our next batch of students success in their future career paths."
   }
@@ -93,7 +93,7 @@ export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
 
-  const categories = ['All', 'Campus Life', 'Classrooms', 'Japan', 'Cultural Events'];
+  const categories = ['All', 'Events', 'Sports', 'Success'];
 
   useEffect(() => {
     async function fetchGallery() {

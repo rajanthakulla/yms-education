@@ -143,16 +143,16 @@ export function getDb() {
       VALUES (?, ?, ?, ?, 1)
     `);
 
-    insertGallery.run("Language Program Certification", "Campus Life", "/images/gallery/certification-1.jpg", "Students receiving their Japanese language course completion certificates.");
-    insertGallery.run("JLPT Certificate Distribution", "Campus Life", "/images/gallery/certification-2.jpg", "Celebrating student successes in the JLPT exam achievements.");
-    insertGallery.run("Interactive Study Sessions", "Classrooms", "/images/gallery/college-1.jpg", "A look inside our modern Japanese language classrooms.");
-    insertGallery.run("Japanese Culture & Orientation Seminars", "Cultural Events", "/images/gallery/event-1.jpg", "Students participating in cultural exchange orientations.");
-    insertGallery.run("Annual Cultural Festivities", "Cultural Events", "/images/gallery/event-2.jpg", "Celebrating traditional Japanese cultural events and festivals.");
-    insertGallery.run("Pre-departure Orientation Program", "Cultural Events", "/images/gallery/event-3.jpg", "Preparing students for their upcoming academic journey in Japan.");
-    insertGallery.run("Language Classes & Presentations", "Classrooms", "/images/gallery/event-4.jpg", "Interactive presentation sessions to build confidence in speaking Japanese.");
-    insertGallery.run("Community & Interaction Program", "Cultural Events", "/images/gallery/event-5.jpg", "Student engagement and group discussions during cultural sessions.");
-    insertGallery.run("Visa Success Stories Celebrations", "Campus Life", "/images/gallery/success-1.jpg", "YMS students celebrating high visa success rates for Japan.");
-    insertGallery.run("Alumni Gathering and Send-offs", "Campus Life", "/images/gallery/success-2.jpg", "Wishing our next batch of students success in their future career paths.");
+    insertGallery.run("Language Program Certification", "Success", "/images/gallery/certification-1.jpg", "Students receiving their Japanese language course completion certificates.");
+    insertGallery.run("JLPT Certificate Distribution", "Success", "/images/gallery/certification-2.jpg", "Celebrating student successes in the JLPT exam achievements.");
+    insertGallery.run("Interactive Study Sessions", "Events", "/images/gallery/college-1.jpg", "A look inside our modern Japanese language classrooms.");
+    insertGallery.run("Japanese Culture & Orientation Seminars", "Events", "/images/gallery/event-1.jpg", "Students participating in cultural exchange orientations.");
+    insertGallery.run("Annual Cultural Festivities", "Events", "/images/gallery/event-2.jpg", "Celebrating traditional Japanese cultural events and festivals.");
+    insertGallery.run("Pre-departure Orientation Program", "Events", "/images/gallery/event-3.jpg", "Preparing students for their upcoming academic journey in Japan.");
+    insertGallery.run("Language Classes & Presentations", "Events", "/images/gallery/event-4.jpg", "Interactive presentation sessions to build confidence in speaking Japanese.");
+    insertGallery.run("Community & Interaction Program", "Events", "/images/gallery/event-5.jpg", "Student engagement and group discussions during cultural sessions.");
+    insertGallery.run("Visa Success Stories Celebrations", "Success", "/images/gallery/success-1.jpg", "YMS students celebrating high visa success rates for Japan.");
+    insertGallery.run("Alumni Gathering and Send-offs", "Success", "/images/gallery/success-2.jpg", "Wishing our next batch of students success in their future career paths.");
   }
 
   return db;

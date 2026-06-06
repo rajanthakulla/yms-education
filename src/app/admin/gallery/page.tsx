@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface GalleryItem {
   id: number;
   title: string;
-  category: 'Campus Life' | 'Classrooms' | 'Japan' | 'Cultural Events';
+  category: 'Events' | 'Sports' | 'Success';
   img: string;
   desc: string;
   published: number;
@@ -20,12 +20,12 @@ export default function ManageGallery() {
 
   // Form State
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState<GalleryItem['category']>('Campus Life');
+  const [category, setCategory] = useState<GalleryItem['category']>('Events');
   const [img, setImg] = useState('');
   const [desc, setDesc] = useState('');
   const [published, setPublished] = useState(true);
 
-  const categories: GalleryItem['category'][] = ['Campus Life', 'Classrooms', 'Japan', 'Cultural Events'];
+  const categories: GalleryItem['category'][] = ['Events', 'Sports', 'Success'];
 
   useEffect(() => {
     fetchGallery();
@@ -45,7 +45,7 @@ export default function ManageGallery() {
 
   const resetForm = () => {
     setTitle('');
-    setCategory('Campus Life');
+    setCategory('Events');
     setImg('');
     setDesc('');
     setPublished(true);
