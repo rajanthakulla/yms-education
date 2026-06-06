@@ -67,7 +67,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentHeroIdx((prev) => (prev + 1) % heroImages.length);
-    }, 1500);
+    }, 2000);
     return () => clearInterval(timer);
   }, [heroImages.length]);
 
