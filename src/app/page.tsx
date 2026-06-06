@@ -145,32 +145,26 @@ export default function Home() {
           </motion.div>
           
           <motion.div 
-            className="flex-1 w-full relative group"
-            initial={{ opacity: 0, scale: 0.95 }}
+            className="flex-1 w-full relative"
+            initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            {/* Decorative Dotted Grid behind the image card */}
-            <div className="absolute -left-6 -bottom-6 w-32 h-32 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:12px_12px] opacity-60 pointer-events-none rounded-xl"></div>
-            
-            {/* Ambient Glow behind the card */}
-            <div className="absolute -inset-4 bg-gradient-to-tr from-[#E8192C]/10 via-transparent to-[#0097A7]/10 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-            
-            {/* Main Card with 1px Gradient Border */}
-            <div className="relative p-[1px] rounded-2xl bg-gradient-to-tr from-[#E8192C]/30 via-gray-200 to-[#0097A7]/30 shadow-2xl transition-all duration-500 ease-out group-hover:shadow-[0px_20px_50px_rgba(26,35,64,0.15)] group-hover:scale-[1.01] aspect-[4/3] w-full overflow-hidden">
-              <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gray-50">
-                <Image 
-                  alt="Student studying" 
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
-                  src="/images/hero-image.png"
-                  fill
-                  priority={true}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                
-                {/* Subtle bottom fade-out gradient overlay to blend image borders */}
-                <div className="absolute inset-x-0 bottom-0 h-[15%] bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] w-full bg-gray-50">
+              <Image 
+                alt="Student studying" 
+                className="object-cover" 
+                src="/images/hero-image.png"
+                fill
+                priority={true}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              
+              {/* Fading borders (top, bottom, left, right) to blend image smoothly into page background */}
+              <div className="absolute top-0 inset-x-0 h-[10%] bg-gradient-to-b from-white to-transparent pointer-events-none z-10"></div>
+              <div className="absolute bottom-0 inset-x-0 h-[15%] bg-gradient-to-t from-white to-transparent pointer-events-none z-10"></div>
+              <div className="absolute left-0 inset-y-0 w-[10%] bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
+              <div className="absolute right-0 inset-y-0 w-[10%] bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
             </div>
 
             {/* Floating Glassmorphism Badge */}
