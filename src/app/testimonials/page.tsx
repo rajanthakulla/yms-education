@@ -68,7 +68,7 @@ export default function Testimonials() {
           </motion.h1>
           
           <motion.p 
-            className="font-nunito-sans text-lg text-[#5d3f3d] max-w-2xl mx-auto leading-relaxed"
+            className="font-nunito-sans text-lg text-[#334155] max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -160,7 +160,7 @@ export default function Testimonials() {
               
               <div className="pt-6 border-t border-[#dfe3e7] inline-block">
                 <h3 className="font-nunito text-3xl text-[#E8192C] font-black mb-1">{featured.name}</h3>
-                <p className="font-noto-sans text-[#5d3f3d] uppercase tracking-widest text-sm mb-4">
+                <p className="font-noto-sans text-[#334155] uppercase tracking-widest text-sm mb-4">
                   {featured.program} {featured.university ? `, ${featured.university}` : ''}
                 </p>
                 <div className="flex gap-1.5">
@@ -190,7 +190,7 @@ export default function Testimonials() {
               <span className="text-[#1B2A6B]">Voices of </span>
               <span className="text-[#E8192C] italic">Excellence</span>
             </h2>
-            <p className="font-nunito-sans text-lg text-[#5d3f3d]">Hear from our community of scholars who are making their mark across Japan's top institutions.</p>
+            <p className="font-nunito-sans text-lg text-[#334155]">Hear from our community of scholars who are making their mark across Japan's top institutions.</p>
           </motion.div>
 
           {loading ? (
@@ -271,7 +271,7 @@ export default function Testimonials() {
                           <p className={`font-noto-sans font-extrabold text-lg ${styleIndex === 2 ? 'text-white' : 'text-[#1B2A6B]'}`}>
                             {t.name}
                           </p>
-                          <p className={`font-noto-sans uppercase tracking-wider text-xs font-bold mt-1 ${styleIndex === 0 ? 'text-[#E8192C]' : styleIndex === 1 ? 'text-[#5d3f3d]' : 'text-[#ffb3ae]'}`}>
+                          <p className={`font-noto-sans uppercase tracking-wider text-xs font-bold mt-1 ${styleIndex === 0 ? 'text-[#E8192C]' : styleIndex === 1 ? 'text-[#334155]' : 'text-[#ffb3ae]'}`}>
                             {t.university || t.program}
                           </p>
                         </div>
@@ -283,7 +283,7 @@ export default function Testimonials() {
             </div>
           ) : (
             !featured && (
-              <div className="text-center py-10 text-[#5d3f3d]">
+              <div className="text-center py-10 text-[#334155]">
                 <p>No testimonials available yet.</p>
               </div>
             )
@@ -310,13 +310,13 @@ export default function Testimonials() {
             <span className="text-[#E8192C] block mb-2">Ready to</span>
             <span className="text-[#1B2A6B]"> Be Our Next Success Story?</span>
           </h2>
-          <p className="font-nunito-sans text-xl text-[#5d3f3d] mb-12 font-light leading-relaxed">
+          <p className="font-nunito-sans text-xl text-[#334155] mb-12 font-light leading-relaxed">
             Join hundreds of successful scholars in Japan. Our expert academic counselors provide bespoke guidance for your unique career trajectory.
           </p>
           <Link href="/contact" className="inline-block bg-[#E8192C] text-white px-12 py-5 rounded-full font-nunito text-lg font-bold shadow-premium hover:shadow-[0_20px_40px_-10px_rgba(232,25,44,0.3)] hover:-translate-y-1 active:scale-95 transition-all duration-300 tracking-wide">
             SCHEDULE YOUR CONSULTATION
           </Link>
-          <p className="mt-6 font-noto-sans text-sm text-[#5d3f3d]/70 uppercase tracking-widest">Free 30-minute initial assessment</p>
+          <p className="mt-6 font-noto-sans text-sm text-[#334155]/70 uppercase tracking-widest">Free 30-minute initial assessment</p>
         </motion.div>
       </section>
     </div>

@@ -21,7 +21,7 @@ export default function StudyInJapan() {
             <h1 className="font-nunito font-black text-5xl md:text-6xl text-[#1B2A6B] mb-6 leading-tight">
               Study in <span className="text-[#E8192C]">Japan</span>
             </h1>
-            <p className="text-lg text-[#5d3f3d] mb-10 max-w-lg">
+            <p className="text-lg text-[#334155] mb-10 max-w-lg">
               Unlock world-class education, immerse yourself in a unique culture, and build a global career in one of the safest and most advanced countries in the world.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -72,7 +72,7 @@ export default function StudyInJapan() {
                 <span className="material-symbols-outlined text-4xl">{item.icon}</span>
               </div>
               <h3 className="text-2xl font-bold font-nunito text-[#1B2A6B] mb-4">{item.title}</h3>
-              <p className="text-[#5d3f3d]">{item.desc}</p>
+              <p className="text-[#334155]">{item.desc}</p>
             </AnimatedCard>
           ))}
         </div>
@@ -94,7 +94,7 @@ export default function StudyInJapan() {
             <AnimatedCard key={index} delay={index * 0.1} className="p-8" borderColor="border-t-[#1B2A6B]">
               <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">{item.icon}</span>
               <h3 className="text-xl font-bold font-nunito text-[#1B2A6B] mb-2">{item.title}</h3>
-              <p className="text-sm text-[#5d3f3d]">{item.desc}</p>
+              <p className="text-sm text-[#334155]">{item.desc}</p>
             </AnimatedCard>
           ))}
         </div>
@@ -185,7 +185,7 @@ export default function StudyInJapan() {
               <span className="material-symbols-outlined text-[#E8192C]">verified</span>
               Qualifications
             </h3>
-            <ul className="space-y-4 text-[#5d3f3d]">
+            <ul className="space-y-4 text-[#334155]">
               <li className="flex gap-3">
                 <div className="w-6 h-6 rounded-full bg-[#1B2A6B] text-white flex items-center justify-center text-xs mt-1">1</div>
                 <div>12 years of formal education (High School passed)</div>
@@ -217,7 +217,7 @@ export default function StudyInJapan() {
                     <span className="material-symbols-outlined text-2xl">{step.icon}</span>
                   </div>
                   <h4 className="font-bold text-[#1B2A6B] mb-2">Step {index + 1}: {step.title}</h4>
-                  <p className="text-sm text-[#5d3f3d]">{step.desc}</p>
+                  <p className="text-sm text-[#334155]">{step.desc}</p>
                 </div>
               ))}
             </div>

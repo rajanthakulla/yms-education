@@ -34,7 +34,7 @@ export default function Services() {
           </motion.h1>
           
           <motion.p 
-            className="font-nunito-sans text-lg text-[#5d3f3d] max-w-2xl mx-auto leading-relaxed"
+            className="font-nunito-sans text-lg text-[#334155] max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -87,7 +87,7 @@ export default function Services() {
             <AnimatedCard key={index} delay={index * 0.1} className="p-8 hover:bg-[#1B2A6B] hover:text-white transition-colors group cursor-pointer bg-white/80 backdrop-blur-md">
               <span className={`material-symbols-outlined text-5xl mb-6 block transition-colors group-hover:text-white ${service.color}`}>{service.icon}</span>
               <h3 className="text-2xl font-bold font-nunito mb-4 group-hover:text-white text-[#1B2A6B]">{service.title}</h3>
-              <p className="text-[#5d3f3d] group-hover:text-gray-300 transition-colors">{service.desc}</p>
+              <p className="text-[#334155] group-hover:text-gray-300 transition-colors">{service.desc}</p>
             </AnimatedCard>
           ))}
         </div>
@@ -129,8 +129,8 @@ export default function Services() {
                 </div>
               </div>
               <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-8' : 'text-left pl-8'}`}>
-                <h4 className="text-xl font-bold font-nunito text-[#1B2A6B]">{item.title}</h4>
-                <p className="text-sm text-[#5d3f3d] mt-1">{item.desc}</p>
+                <h3 className="text-xl font-bold font-nunito text-[#1B2A6B]">{item.title}</h3>
+                <p className="text-sm text-[#334155] mt-1">{item.desc}</p>
               </div>
             </motion.div>
           ))}

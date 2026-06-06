@@ -143,7 +143,7 @@ export default function ManageBlogs() {
                       <p className="text-xs text-gray-500">{blog.slug}</p>
                     </td>
                     <td className="p-4">
-                      <span className="px-3 py-1 bg-gray-100 text-[#5d3f3d] text-xs font-bold rounded-full">
+                      <span className="px-3 py-1 bg-gray-100 text-[#334155] text-xs font-bold rounded-full">
                         {blog.category}
                       </span>
                     </td>

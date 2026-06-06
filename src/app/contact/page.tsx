@@ -33,7 +33,7 @@ export default function Contact() {
           </motion.h1>
           
           <motion.p 
-            className="font-nunito-sans text-lg text-[#5d3f3d] max-w-2xl mx-auto leading-relaxed"
+            className="font-nunito-sans text-lg text-[#334155] max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -94,25 +94,25 @@ export default function Contact() {
               <AnimatedCard delay={0.1} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">location_on</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Visit Us</h3>
-                <p className="text-[#5d3f3d] text-sm">Bagbazar-28<br/>Kathmandu, Nepal</p>
+                <p className="text-[#334155] text-sm">Bagbazar-28<br/>Kathmandu, Nepal</p>
               </AnimatedCard>
 
               <AnimatedCard delay={0.2} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">call</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Call Us</h3>
-                <p className="text-[#5d3f3d] text-sm">+977-1-4232155<br/>+977-9800000000</p>
+                <p className="text-[#334155] text-sm">+977-1-4232155<br/>+977-9800000000</p>
               </AnimatedCard>
 
               <AnimatedCard delay={0.3} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">mail</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Email Us</h3>
-                <p className="text-[#5d3f3d] text-sm">info@yms.edu.np<br/>support@yms.edu.np</p>
+                <p className="text-[#334155] text-sm">info@yms.edu.np<br/>support@yms.edu.np</p>
               </AnimatedCard>
 
               <AnimatedCard delay={0.4} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">schedule</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Office Hours</h3>
-                <p className="text-[#5d3f3d] text-sm">Sunday - Friday<br/>10:00 AM - 6:00 PM</p>
+                <p className="text-[#334155] text-sm">Sunday - Friday<br/>10:00 AM - 6:00 PM</p>
               </AnimatedCard>
             </div>
 

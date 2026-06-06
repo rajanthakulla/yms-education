@@ -152,7 +152,7 @@ export default function ManageTestimonials() {
                       <span className="font-bold text-[#1B2A6B]">{t.name}</span>
                     </td>
                     <td className="p-4">
-                      <p className="text-sm font-bold text-[#5d3f3d]">{t.program || '-'}</p>
+                      <p className="text-sm font-bold text-[#334155]">{t.program || '-'}</p>
                       <p className="text-xs text-[#0097A7]">{t.university}</p>
                     </td>
                     <td className="p-4">

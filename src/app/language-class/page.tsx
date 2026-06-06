@@ -35,7 +35,7 @@ export default function LanguageClass() {
           </motion.h1>
           
           <motion.p 
-            className="font-nunito-sans text-lg text-[#5d3f3d] max-w-2xl mx-auto leading-relaxed"
+            className="font-nunito-sans text-lg text-[#334155] max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -58,7 +58,7 @@ export default function LanguageClass() {
             <AnimatedCard key={index} delay={index * 0.1} className="p-8 text-center border-b-4 border-[#0097A7] bg-white/80 backdrop-blur-md">
               <span className="material-symbols-outlined text-5xl text-[#0097A7] mb-6 block">{item.icon}</span>
               <h3 className="text-xl font-bold font-nunito text-[#1B2A6B] mb-4">{item.title}</h3>
-              <p className="text-[#5d3f3d]">{item.desc}</p>
+              <p className="text-[#334155]">{item.desc}</p>
             </AnimatedCard>
           ))}
         </div>
@@ -104,7 +104,7 @@ export default function LanguageClass() {
                   <h3 className="text-2xl font-black font-nunito text-[#1B2A6B]">{course.title}</h3>
                   <span className={`px-3 py-1 rounded-full text-xs font-bold ${course.bg} ${course.text}`}>{course.level}</span>
                 </div>
-                <p className="text-[#5d3f3d] mb-6">{course.desc}</p>
+                <p className="text-[#334155] mb-6">{course.desc}</p>
                 <div className="flex items-center gap-2 text-sm font-bold text-gray-500 mb-8">
                   <span className="material-symbols-outlined text-[18px]">schedule</span>
                   {course.duration}
@@ -147,8 +147,8 @@ export default function LanguageClass() {
           >
             <span className="text-[#E8192C] font-bold tracking-widest uppercase mb-2 block">Lead Instructor</span>
             <TwoToneHeading firstText="Meet" secondText="Nabin Bohora" className="text-4xl md:text-5xl mb-6" />
-            <h4 className="text-xl font-bold text-[#0097A7] mb-6">Senior Japanese Language Teacher</h4>
-            <p className="text-[#5d3f3d] text-lg mb-6 leading-relaxed">
+            <h3 className="text-xl font-bold text-[#0097A7] mb-6">Senior Japanese Language Teacher</h3>
+            <p className="text-[#334155] text-lg mb-6 leading-relaxed">
               With years of experience teaching Japanese to international students, Nabin brings a practical, result-oriented approach to language learning. His classes are known for being engaging, thorough, and perfectly aligned with what students need to succeed in Japan.
             </p>
             <div className="flex items-center gap-4 text-[#1B2A6B] font-bold">

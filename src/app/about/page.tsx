@@ -37,7 +37,7 @@ export default function AboutUs() {
           </motion.h1>
           
           <motion.p 
-            className="font-nunito-sans text-lg text-[#5d3f3d] max-w-2xl mx-auto leading-relaxed"
+            className="font-nunito-sans text-lg text-[#334155] max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -75,7 +75,7 @@ export default function AboutUs() {
             viewport={{ once: true }}
           >
             <TwoToneHeading firstText="About" secondText="YMS Education" className="text-4xl md:text-5xl mb-6" />
-            <div className="space-y-6 text-[#5d3f3d] text-lg">
+            <div className="space-y-6 text-[#334155] text-lg">
               <p>
                 Established with a vision to connect Nepalese students with world-class education in Japan, YMS Education Foundation has been a pioneer in educational consultancy and language preparation.
               </p>
@@ -113,7 +113,7 @@ export default function AboutUs() {
                 <div className="md:w-[45%] text-left md:text-right order-2 md:order-1 pl-20 md:pl-0 mt-2 md:mt-0 md:pr-12">
                   <div className="inline-block px-4 py-1.5 rounded-full bg-[#1B2A6B]/10 text-[#1B2A6B] font-bold text-sm mb-3">The Beginning</div>
                   <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-3">A Singular Focus</h3>
-                  <p className="text-[#5d3f3d] font-noto-sans leading-relaxed">
+                  <p className="text-[#334155] font-noto-sans leading-relaxed">
                     YMS Education Consultancy was founded with a singular focus: bridging the gap between ambitious students in Nepal and the vast educational opportunities in Japan.
                   </p>
                 </div>
@@ -137,7 +137,7 @@ export default function AboutUs() {
                 <div className="md:w-[45%] text-left order-3 md:order-3 pl-20 md:pl-12 mt-2 md:mt-0">
                   <div className="inline-block px-4 py-1.5 rounded-full bg-[#0097A7]/10 text-[#0097A7] font-bold text-sm mb-3">Building Trust</div>
                   <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-3">Forging Relationships</h3>
-                  <p className="text-[#5d3f3d] font-noto-sans leading-relaxed">
+                  <p className="text-[#334155] font-noto-sans leading-relaxed">
                     Over the years, we built strong relationships with top universities and language schools across Japan, establishing high ethical standards and maintaining an exceptional visa success rate.
                   </p>
                 </div>
@@ -153,7 +153,7 @@ export default function AboutUs() {
                 <div className="md:w-[45%] text-left md:text-right order-2 md:order-1 pl-20 md:pl-0 mt-2 md:mt-0 md:pr-12">
                   <div className="inline-block px-4 py-1.5 rounded-full bg-[#E8192C]/10 text-[#E8192C] font-bold text-sm mb-3">Holistic Support</div>
                   <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-3">Beyond Admissions</h3>
-                  <p className="text-[#5d3f3d] font-noto-sans leading-relaxed">
+                  <p className="text-[#334155] font-noto-sans leading-relaxed">
                     We expanded our services beyond admissions to include JLPT preparation, cultural orientation, and job placement assistance, ensuring every student is prepared.
                   </p>
                 </div>
@@ -177,7 +177,7 @@ export default function AboutUs() {
                 <div className="md:w-[45%] text-left order-3 md:order-3 pl-20 md:pl-12 mt-2 md:mt-0">
                   <div className="inline-block px-4 py-1.5 rounded-full bg-[#1B2A6B]/10 text-[#1B2A6B] font-bold text-sm mb-3">Today</div>
                   <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-3">Pioneering Success</h3>
-                  <p className="text-[#5d3f3d] font-noto-sans leading-relaxed">
+                  <p className="text-[#334155] font-noto-sans leading-relaxed">
                     Today, our history is defined by the success stories of our alumni who are thriving professionals and outstanding scholars across Japan.
                   </p>
                 </div>
@@ -195,7 +195,7 @@ export default function AboutUs() {
               <span className="material-symbols-outlined text-3xl">flag</span>
             </div>
             <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-4">Our Mission</h3>
-            <p className="text-[#5d3f3d]">
+            <p className="text-[#334155]">
               To provide transparent, accurate, and ethical counseling to students aspiring to study in Japan, while equipping them with excellent Japanese language skills.
             </p>
           </AnimatedCard>
@@ -205,7 +205,7 @@ export default function AboutUs() {
               <span className="material-symbols-outlined text-3xl">visibility</span>
             </div>
             <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-4">Our Vision</h3>
-            <p className="text-[#5d3f3d]">
+            <p className="text-[#334155]">
               To be the most trusted and preferred educational consultancy in Nepal, fostering global citizens who bridge the cultural and economic ties between Nepal and Japan.
             </p>
           </AnimatedCard>
@@ -215,7 +215,7 @@ export default function AboutUs() {
               <span className="material-symbols-outlined text-3xl">diamond</span>
             </div>
             <h3 className="text-2xl font-black font-nunito text-[#1B2A6B] mb-4">Our Values</h3>
-            <ul className="space-y-3 text-[#5d3f3d]">
+            <ul className="space-y-3 text-[#334155]">
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-[#0097A7]">check_circle</span>
                 Integrity & Honesty
@@ -271,7 +271,7 @@ export default function AboutUs() {
                   />
                 </div>
               </div>
-              <h4 className="font-black font-nunito text-xl text-[#1B2A6B]">{member.name}</h4>
+              <h3 className="font-black font-nunito text-xl text-[#1B2A6B]">{member.name}</h3>
               <p className="font-bold text-[#0097A7]">{member.role}</p>
             </motion.div>
           ))}
@@ -284,22 +284,22 @@ export default function AboutUs() {
           <p className="text-sm font-bold text-[#1B2A6B] uppercase tracking-widest mb-8">In Partnership With</p>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14 max-w-5xl mx-auto">
             <motion.div 
-              className="relative w-32 h-16 mix-blend-multiply hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="hover:scale-105 transition-all duration-300 cursor-pointer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0 }}
             >
-              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" fill className="object-contain" />
+              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" width={128} height={64} className="object-contain mix-blend-multiply" />
             </motion.div>
             <motion.div 
-              className="relative w-32 h-16 mix-blend-multiply hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="hover:scale-105 transition-all duration-300 cursor-pointer"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <Image src="/images/partners/egao-logo.png" alt="EGAO" fill className="object-contain" />
+              <Image src="/images/partners/egao-logo.png" alt="EGAO" width={128} height={64} className="object-contain mix-blend-multiply" />
             </motion.div>
             <motion.span 
               className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-gray-300 hover:text-[#1B2A6B] transition-colors cursor-pointer select-none text-center max-w-[180px] leading-tight"

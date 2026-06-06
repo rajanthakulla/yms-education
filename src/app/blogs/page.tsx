@@ -79,7 +79,7 @@ export default function Blogs() {
           </motion.h1>
           
           <motion.p 
-            className="font-nunito-sans text-lg text-[#5d3f3d] max-w-2xl mx-auto leading-relaxed"
+            className="font-nunito-sans text-lg text-[#334155] max-w-2xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -91,6 +91,7 @@ export default function Blogs() {
 
       <SectionWrapper id="blogs" className="relative z-10">
         <div className="max-w-[1280px] mx-auto">
+          <h2 className="sr-only">Latest Articles</h2>
           {/* Categories */}
           <div className="flex flex-wrap gap-2 mb-12 justify-center">
             {categories.map((cat) => (
@@ -100,7 +101,7 @@ export default function Blogs() {
                 className={`px-6 py-2 rounded-full text-sm font-bold transition-all ${
                   activeCategory === cat 
                   ? 'bg-[#1B2A6B] text-white shadow-md' 
-                  : 'bg-[#f0f4f8] text-[#5d3f3d] hover:bg-[#d6dade]'
+                  : 'bg-[#f0f4f8] text-[#334155] hover:bg-[#d6dade]'
                 }`}
               >
                 {cat}
@@ -138,7 +139,7 @@ export default function Blogs() {
                       <h3 className="font-nunito font-black text-xl text-[#1B2A6B] mb-3 group-hover:text-[#E8192C] transition-colors line-clamp-2">
                         {blog.title}
                       </h3>
-                      <p className="text-[#5d3f3d] text-sm mb-6 line-clamp-3 flex-grow">
+                      <p className="text-[#334155] text-sm mb-6 line-clamp-3 flex-grow">
                         {blog.excerpt || 'Read this post to learn more...'}
                       </p>
                       
@@ -157,7 +158,7 @@ export default function Blogs() {
               ))}
             </div>
           ) : (
-            <div className="text-center py-20 text-[#5d3f3d]">
+            <div className="text-center py-20 text-[#334155]">
               <span className="material-symbols-outlined text-5xl text-gray-300 mb-4 block">search_off</span>
               <p className="text-xl font-bold">No blogs found in this category.</p>
             </div>

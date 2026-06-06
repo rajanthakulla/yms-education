@@ -110,7 +110,7 @@ export default function Home() {
             </motion.h1>
             
             <motion.p 
-              className="font-[family-name:var(--font-dm-sans)] text-[18px] leading-[1.6] text-[#545d7d] max-w-2xl"
+              className="font-[family-name:var(--font-dm-sans)] text-[18px] leading-[1.6] text-[#475569] max-w-2xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -127,13 +127,13 @@ export default function Home() {
               <Link href="/contact" className="bg-[#E8192C] text-[#ffffff] px-[32px] py-[16px] rounded shadow-md hover:shadow-lg hover:bg-[#1B2A6B] transition-all duration-300 font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-center">
                 Book Free Counseling
               </Link>
-              <Link href="/about" className="bg-transparent border border-[#545d7d] text-[#545d7d] hover:bg-[#1B2A6B] hover:text-white hover:border-[#1B2A6B] px-[32px] py-[16px] rounded transition-all duration-300 font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] flex items-center justify-center gap-2">
+              <Link href="/about" className="bg-transparent border border-[#475569] text-[#475569] hover:bg-[#1B2A6B] hover:text-white hover:border-[#1B2A6B] px-[32px] py-[16px] rounded transition-all duration-300 font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] flex items-center justify-center gap-2">
                 Learn More <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
             </motion.div>
             
             <motion.div 
-              className="pt-4 flex items-center gap-4 text-[#545d7d]"
+              className="pt-4 flex items-center gap-4 text-[#475569]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.9 }}
@@ -174,19 +174,19 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="flex flex-col items-center space-y-2">
               <span className="font-[family-name:var(--font-playfair)] text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={99.8} isFloat={true} />%</span>
-              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#545d7d] uppercase">Visa Success</span>
+              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Visa Success</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <span className="font-[family-name:var(--font-playfair)] text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={100} />+</span>
-              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#545d7d] uppercase">Students</span>
+              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Students</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <span className="font-[family-name:var(--font-playfair)] text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={5} />+</span>
-              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#545d7d] uppercase">Partner Schools</span>
+              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Partner Schools</span>
             </div>
             <div className="flex flex-col items-center space-y-2">
               <span className="font-[family-name:var(--font-playfair)] text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={2} />+</span>
-              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#545d7d] uppercase">Yrs Experience</span>
+              <span className="font-[family-name:var(--font-dm-sans)] text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Yrs Experience</span>
             </div>
           </div>
         </div>
@@ -205,11 +205,11 @@ export default function Home() {
             In Partnership With
           </p>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14 max-w-5xl">
-            <div className="relative w-32 h-16 mix-blend-multiply hover:scale-105 transition-transform duration-300">
-              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" fill className="object-contain" />
+            <div className="hover:scale-105 transition-transform duration-300">
+              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" width={128} height={64} className="object-contain mix-blend-multiply" />
             </div>
-            <div className="relative w-32 h-16 mix-blend-multiply hover:scale-105 transition-transform duration-300">
-              <Image src="/images/partners/egao-logo.png" alt="EGAO" fill className="object-contain" />
+            <div className="hover:scale-105 transition-transform duration-300">
+              <Image src="/images/partners/egao-logo.png" alt="EGAO" width={128} height={64} className="object-contain mix-blend-multiply" />
             </div>
             <span className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-[#cfd6df] tracking-tight hover:text-[#1B2A6B] transition-colors cursor-default select-none text-center max-w-[180px] leading-tight">
               NEPAL MANPOWER
@@ -264,7 +264,7 @@ export default function Home() {
           >
             <TwoToneHeading firstText="Message from" secondText="the CEO" className="text-4xl md:text-5xl mb-8" />
             
-            <blockquote className="pl-6 border-l-4 border-[#E8192C] text-xl font-nunito italic text-[#5d3f3d] mb-6">
+            <blockquote className="pl-6 border-l-4 border-[#E8192C] text-xl font-nunito italic text-[#334155] mb-6">
               "Our goal is not just to send students to Japan, but to ensure they succeed and build a solid foundation for their future."
             </blockquote>
             
@@ -297,7 +297,7 @@ export default function Home() {
       <SectionWrapper id="what-is-yms" bgColor="bg-transparent" className="relative overflow-hidden z-10">
         <div className="max-w-[1280px] mx-auto text-center relative z-10">
           <TwoToneHeading firstText="WHAT IS" secondText="YMS?" className="text-4xl md:text-5xl mb-4" />
-          <p className="text-[#5d3f3d] max-w-2xl mx-auto mb-16 text-lg">
+          <p className="text-[#334155] max-w-2xl mx-auto mb-16 text-lg">
             Building a robust bridge between the youth of Nepal and the opportunities of Japan.
           </p>
 
@@ -399,8 +399,8 @@ export default function Home() {
                     {index + 1}
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold font-nunito text-[#1B2A6B] mb-1">{item.title}</h4>
-                    <p className="text-[#5d3f3d]">{item.desc}</p>
+                    <h3 className="text-xl font-bold font-nunito text-[#1B2A6B] mb-1">{item.title}</h3>
+                    <p className="text-[#334155]">{item.desc}</p>
                   </div>
                 </motion.div>
               ))}
@@ -425,7 +425,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">EGAO GROUP</h4>
-                    <p className="text-sm text-[#5d3f3d]">Fukuoka, Japan</p>
+                    <p className="text-sm text-[#334155]">Fukuoka, Japan</p>
                   </div>
                 </div>
 
@@ -435,7 +435,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg">YAMASA Institute</h4>
-                    <p className="text-sm text-[#5d3f3d]">Aichi, Japan</p>
+                    <p className="text-sm text-[#334155]">Aichi, Japan</p>
                   </div>
                 </div>
               </div>
@@ -495,7 +495,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold font-nunito text-[#1B2A6B] mb-2">{item.title}</h3>
-                <p className="text-[#5d3f3d]">{item.desc}</p>
+                <p className="text-[#334155]">{item.desc}</p>
               </div>
             </AnimatedCard>
           ))}
@@ -540,7 +540,7 @@ export default function Home() {
                 )}
               </div>
               <div className="p-6 text-center">
-                <h4 className="font-black font-nunito text-lg text-[#1B2A6B] mb-1">{member.name}</h4>
+                <h3 className="font-black font-nunito text-lg text-[#1B2A6B] mb-1">{member.name}</h3>
                 <p className="text-xs font-bold text-gray-500 mb-1">{member.jp}</p>
                 <p className="text-sm font-semibold text-[#0097A7]">{member.title}</p>
               </div>
@@ -620,7 +620,7 @@ export default function Home() {
                       <span className="material-symbols-outlined">trending_up</span>
                     </div>
                     <div>
-                      <h4 className="text-2xl font-black text-white">100%</h4>
+                      <h3 className="text-2xl font-black text-white">100%</h3>
                       <p className="text-sm text-gray-300">Post-Arrival Placement Rate</p>
                     </div>
                   </div>
@@ -666,7 +666,7 @@ export default function Home() {
                 <span className="material-symbols-outlined text-4xl">{service.icon}</span>
               </div>
               <h3 className="text-2xl font-bold font-nunito text-[#1B2A6B] mb-4">{service.title}</h3>
-              <p className="text-[#5d3f3d] mb-8 flex-grow">{service.desc}</p>
+              <p className="text-[#334155] mb-8 flex-grow">{service.desc}</p>
               <Link href="/services" className={`text-sm font-bold flex items-center gap-2 ${service.color} hover:underline`}>
                 LEARN MORE <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </Link>
@@ -685,7 +685,7 @@ export default function Home() {
       <SectionWrapper id="testimonials" bgColor="bg-[#f0f4f8]" className="relative z-10 py-24">
         <div className="max-w-[1280px] mx-auto text-center mb-16">
           <TwoToneHeading firstText="Success Stories" secondText="& Testimonials" className="text-4xl md:text-5xl mb-4" />
-          <p className="text-[#5d3f3d] max-w-2xl mx-auto text-lg font-nunito-sans">
+          <p className="text-[#334155] max-w-2xl mx-auto text-lg font-nunito-sans">
             Hear from our students who successfully transformed their dreams of studying in Japan into reality.
           </p>
         </div>
@@ -704,7 +704,7 @@ export default function Home() {
                 ))}
               </div>
 
-              <blockquote className="text-base text-[#5d3f3d] font-nunito-sans leading-relaxed italic mb-8 flex-grow">
+              <blockquote className="text-base text-[#334155] font-nunito-sans leading-relaxed italic mb-8 flex-grow">
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
 
@@ -722,7 +722,7 @@ export default function Home() {
                   )}
                 </div>
                 <div>
-                  <h4 className="font-extrabold text-[#1B2A6B] font-nunito text-base leading-tight">{t.name}</h4>
+                  <h3 className="font-extrabold text-[#1B2A6B] font-nunito text-base leading-tight">{t.name}</h3>
                   <p className="text-xs text-[#0097A7] font-bold font-noto-sans uppercase tracking-wider mt-0.5">
                     {t.university || t.program}
                   </p>
@@ -743,7 +743,7 @@ export default function Home() {
       <SectionWrapper id="gallery" bgColor="bg-white" className="relative z-10 py-24">
         <div className="max-w-[1280px] mx-auto text-center mb-16">
           <TwoToneHeading firstText="Photo" secondText="Gallery" className="text-4xl md:text-5xl mb-4" />
-          <p className="text-[#5d3f3d] max-w-2xl mx-auto text-lg font-nunito-sans">
+          <p className="text-[#334155] max-w-2xl mx-auto text-lg font-nunito-sans">
             A glimpse into the vibrant student life, classroom sessions, and cultural events at YMS and in Japan.
           </p>
         </div>
@@ -773,9 +773,9 @@ export default function Home() {
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1B2A6B]/90 via-[#1B2A6B]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                <h4 className="text-white font-nunito font-black text-xl translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                <h3 className="text-white font-nunito font-black text-xl translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
                   {item.title}
-                </h4>
+                </h3>
                 <p className="text-gray-200 text-sm font-medium font-nunito-sans mt-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                   {item.subtitle}
                 </p>
