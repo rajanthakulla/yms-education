@@ -221,7 +221,7 @@ export default function Home() {
 
       {/* --- Stats & Partners Combined --- */}
       <motion.section 
-        className="bg-white py-16 relative z-10 overflow-hidden"
+        className="bg-white py-8 relative z-10 overflow-hidden"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
