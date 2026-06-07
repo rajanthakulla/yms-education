@@ -66,10 +66,10 @@ const FALLBACK_ITEMS: GalleryItem[] = [
   },
   {
     id: 8,
-    title: "Community & Interaction Program",
-    category: "Events",
+    title: "Community Futsal Match",
+    category: "Sports",
     img: "/images/gallery/event-5.jpg",
-    desc: "Student engagement and group discussions during cultural sessions."
+    desc: "Students engaging and building teamwork through a friendly futsal match."
   },
   {
     id: 9,

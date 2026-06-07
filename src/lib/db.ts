@@ -150,7 +150,7 @@ export function getDb() {
     insertGallery.run("Annual Cultural Festivities", "Events", "/images/gallery/event-2.jpg", "Celebrating traditional Japanese cultural events and festivals.");
     insertGallery.run("Pre-departure Orientation Program", "Events", "/images/gallery/event-3.jpg", "Preparing students for their upcoming academic journey in Japan.");
     insertGallery.run("Language Classes & Presentations", "Events", "/images/gallery/event-4.jpg", "Interactive presentation sessions to build confidence in speaking Japanese.");
-    insertGallery.run("Community & Interaction Program", "Events", "/images/gallery/event-5.jpg", "Student engagement and group discussions during cultural sessions.");
+    insertGallery.run("Community Futsal Match", "Sports", "/images/gallery/event-5.jpg", "Students engaging and building teamwork through a friendly futsal match.");
     insertGallery.run("Visa Success Stories Celebrations", "Success", "/images/gallery/success-1.jpg", "YMS students celebrating high visa success rates for Japan.");
     insertGallery.run("Alumni Gathering and Send-offs", "Success", "/images/gallery/success-2.jpg", "Wishing our next batch of students success in their future career paths.");
   }
