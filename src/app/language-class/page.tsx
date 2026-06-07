@@ -148,16 +148,13 @@ export default function LanguageClass() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <span className="text-[#E8192C] font-bold tracking-widest uppercase mb-2 block">Lead Instructor</span>
+
             <TwoToneHeading firstText="Meet" secondText="Nabin Bohora" className="text-4xl md:text-5xl mb-6" />
             <h3 className="text-xl font-bold text-[#0097A7] mb-6">Senior Japanese Language Teacher</h3>
             <p className="text-[#334155] text-lg mb-6 leading-relaxed">
               With years of experience teaching Japanese to international students, Nabin brings a practical, result-oriented approach to language learning. His classes are known for being engaging, thorough, and perfectly aligned with what students need to succeed in Japan.
             </p>
-            <div className="flex items-center gap-4 text-[#1B2A6B] font-bold">
-              <span className="material-symbols-outlined text-3xl text-[#E8192C]">workspace_premium</span>
-              JLPT N1 Certified Expert
-            </div>
+
           </motion.div>
         </div>
       </SectionWrapper>
