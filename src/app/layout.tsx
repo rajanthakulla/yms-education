@@ -45,7 +45,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "YMS Education Foundation - Your Gateway to Japan",
   description:
-    "YMS Education Foundation Pvt. Ltd. - Honest counseling, language preparation, and comprehensive visa support for your journey to Japan. 99.8% visa success rate.",
+    "YMS Education Foundation Pvt. Ltd. - Honest counseling, language preparation, and comprehensive visa support for your journey to Japan. Proven visa success rate.",
   keywords: [
     "study in japan",
     "japanese language",

@@ -80,7 +80,7 @@ export default function AboutUs() {
                 Established with a vision to connect Nepalese students with world-class education in Japan, YMS Education Foundation has been a pioneer in educational guidance and language preparation.
               </p>
               <p>
-                Our journey began with a simple belief: every student deserves honest guidance. Today, we pride ourselves on our 99.8% visa success rate and our comprehensive post-arrival support that ensures our students don't just reach Japan, but thrive there.
+                Our journey began with a simple belief: every student deserves honest guidance. Today, we pride ourselves on our proven visa success rate and our comprehensive post-arrival support that ensures our students don't just reach Japan, but thrive there.
               </p>
             </div>
             <button 
