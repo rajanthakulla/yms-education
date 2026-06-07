@@ -63,7 +63,7 @@ export default function Contact() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-bold text-[#1B2A6B] mb-2">Phone Number</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#E8192C] focus:ring-1 focus:ring-[#E8192C] transition-colors" placeholder="+977 9800000000" />
+                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#E8192C] focus:ring-1 focus:ring-[#E8192C] transition-colors" placeholder="+977 9767220276" />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-[#1B2A6B] mb-2">Program Interest</label>
@@ -94,19 +94,21 @@ export default function Contact() {
               <AnimatedCard delay={0.1} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">location_on</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Visit Us</h3>
-                <p className="text-[#334155] text-sm">Bagbazar-28<br/>Kathmandu, Nepal</p>
+                <p className="text-[#334155] text-sm">New Baneshwor, Kanti Galli,<br/>Opposite to Pani Tanki, 44600</p>
               </AnimatedCard>
 
               <AnimatedCard delay={0.2} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">call</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Call Us</h3>
-                <p className="text-[#334155] text-sm">+977-1-4232155<br/>+977-9800000000</p>
+                <p className="text-[#334155] text-sm">01-5921908<br/>+977 9767220276</p>
               </AnimatedCard>
 
               <AnimatedCard delay={0.3} className="p-6" borderColor="border-t-[#0097A7]">
                 <span className="material-symbols-outlined text-4xl text-[#0097A7] mb-4">mail</span>
                 <h3 className="font-bold text-[#1B2A6B] mb-2">Email Us</h3>
-                <p className="text-[#334155] text-sm">info@yms.edu.np<br/>support@yms.edu.np</p>
+                <p className="text-[#334155] text-sm">
+                  <a href="mailto:educationyms@gmail.com" className="hover:text-[#E8192C] transition-colors hover:underline">educationyms@gmail.com</a>
+                </p>
               </AnimatedCard>
 
               <AnimatedCard delay={0.4} className="p-6" borderColor="border-t-[#0097A7]">
@@ -117,9 +119,9 @@ export default function Contact() {
             </div>
 
             {/* Google Maps Embed */}
-            <AnimatedCard delay={0.5} className="h-[300px] w-full overflow-hidden">
+            <AnimatedCard delay={0.5} className="h-[300px] w-full overflow-hidden relative group">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14129.585721867905!2d85.31342614999999!3d27.7050519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1907b0521ad1%3A0x6b0dc1dc2e176378!2sBagbazar%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp" 
+                src="https://maps.google.com/maps?q=New%20Baneshwor,%20Kanti%20Galli,%20Opposite%20to%20Pani%20Tanki,%20Kathmandu,%20Nepal&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
@@ -127,6 +129,15 @@ export default function Contact() {
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+              <a 
+                href="https://maps.google.com/maps?q=New%20Baneshwor,%20Kanti%20Galli,%20Opposite%20to%20Pani%20Tanki,%20Kathmandu,%20Nepal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-4 right-4 bg-[#E8192C] text-white px-4 py-2 rounded-full text-xs font-bold shadow-md hover:bg-[#1B2A6B] transition-colors flex items-center gap-1 opacity-90 hover:opacity-100 z-10"
+              >
+                <span className="material-symbols-outlined text-[16px]">open_in_new</span>
+                Open in Google Maps
+              </a>
             </AnimatedCard>
           </div>
         </div>

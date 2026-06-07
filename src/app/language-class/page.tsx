@@ -5,6 +5,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 import TwoToneHeading from '@/components/TwoToneHeading';
 import AnimatedCard from '@/components/AnimatedCard';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function LanguageClass() {
   return (
@@ -111,13 +112,15 @@ export default function LanguageClass() {
                 </div>
               </div>
               <div className="p-6 bg-white/50 border-t border-gray-100 text-center">
-                <button className={`w-full py-3 rounded-full font-bold text-white transition-colors ${
-                  index === 0 ? 'bg-[#E8192C] hover:bg-[#1B2A6B]' : 
-                  index === 1 ? 'bg-[#1B2A6B] hover:bg-[#E8192C]' : 
-                  'bg-[#0097A7] hover:bg-[#1B2A6B]'
-                }`}>
-                  Enroll Now
-                </button>
+                <Link href="/contact" className="block w-full">
+                  <button className={`w-full py-3 rounded-full font-bold text-white transition-colors cursor-pointer ${
+                    index === 0 ? 'bg-[#E8192C] hover:bg-[#1B2A6B]' : 
+                    index === 1 ? 'bg-[#1B2A6B] hover:bg-[#E8192C]' : 
+                    'bg-[#0097A7] hover:bg-[#1B2A6B]'
+                  }`}>
+                    Enroll Now
+                  </button>
+                </Link>
               </div>
             </AnimatedCard>
           ))}

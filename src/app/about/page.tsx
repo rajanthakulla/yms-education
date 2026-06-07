@@ -58,7 +58,7 @@ export default function AboutUs() {
           >
             <div className="relative aspect-[4/3] z-10">
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9Sh71uYeZtxRiAOiPacIUNGNEwqhx7TB-ecBPaQwGl64MY05-D0pB5LiiHHug45PTPWust5vtk0iuWGrakk2_3gyJUidT4PdtaM8YCQr3k3UHjLYvCuIzWP4T0ox13-IGlZ_Ui4OoAcfWYysbFBnCaUgYhw259a967hbr-Ve6qtbNVUp62cwHbv2JJY5Zzl3MQEQAPJwU5gNS-aDGRMbs9MywhiUjvInclSq45qau4ZR-IrFjKx9UYxCbVv_rKLo0_fVx0UGl9C9"
+                src="/images/about-page.jpg"
                 alt="Our Story"
                 fill
                 className="object-cover rounded-3xl shadow-xl"
@@ -282,61 +282,61 @@ export default function AboutUs() {
       <section className="py-16 border-t border-gray-200 bg-white">
         <div className="max-w-[1280px] mx-auto px-4 text-center">
           <p className="text-sm font-bold text-[#1B2A6B] uppercase tracking-widest mb-8">In Partnership With</p>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14 max-w-5xl mx-auto">
+          <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-10 max-w-6xl mx-auto w-full">
             <motion.div 
-              className="hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="hover:scale-105 transition-all duration-300 cursor-pointer flex-shrink-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0 }}
             >
-              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" width={128} height={64} className="object-contain mix-blend-multiply" />
+              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" width={110} height={55} className="object-contain mix-blend-multiply" />
             </motion.div>
             <motion.div 
-              className="hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="hover:scale-105 transition-all duration-300 cursor-pointer flex-shrink-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <Image src="/images/partners/egao-logo.png" alt="EGAO" width={128} height={64} className="object-contain mix-blend-multiply" />
+              <Image src="/images/partners/egao-logo.png" alt="EGAO" width={110} height={55} className="object-contain mix-blend-multiply" />
             </motion.div>
-            <motion.span 
-              className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-gray-300 hover:text-[#1B2A6B] transition-colors cursor-pointer select-none text-center max-w-[180px] leading-tight"
+            <motion.div 
+              className="hover:scale-105 transition-all duration-300 cursor-pointer flex-shrink-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              NEPAL MANPOWER
-            </motion.span>
-            <motion.span 
-              className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-gray-300 hover:text-[#1B2A6B] transition-colors cursor-pointer select-none text-center max-w-[240px] leading-tight"
+              <Image src="/images/partners/nepal-manpower-logo.png" alt="NEPAL MANPOWER" width={110} height={55} className="object-contain" />
+            </motion.div>
+            <motion.div 
+              className="hover:scale-105 transition-all duration-300 cursor-pointer flex-shrink-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
             >
-              REMNANT JAPANESE LANGUAGE SCHOOL
-            </motion.span>
-            <motion.span 
-              className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-gray-300 hover:text-[#1B2A6B] transition-colors cursor-pointer select-none text-center max-w-[240px] leading-tight"
+              <Image src="/images/partners/remnant-logo.png" alt="REMNANT JAPANESE LANGUAGE SCHOOL" width={120} height={55} className="object-contain" />
+            </motion.div>
+            <motion.div 
+              className="hover:scale-105 transition-all duration-300 cursor-pointer flex-shrink-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              KAWAHARA E-BUSINESS COLLEGE
-            </motion.span>
-            <motion.span 
-              className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-gray-300 hover:text-[#1B2A6B] transition-colors cursor-pointer select-none text-center max-w-[220px] leading-tight"
+              <Image src="/images/partners/kawahara-logo.png" alt="KAWAHARA E-BUSINESS COLLEGE" width={125} height={55} className="object-contain" />
+            </motion.div>
+            <motion.div 
+              className="hover:scale-105 transition-all duration-300 cursor-pointer flex-shrink-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.7 }}
             >
-              AICHI INT&apos;L ACADEMY
-            </motion.span>
+              <Image src="/images/partners/aichi-logo.png" alt="AICHI INT'L ACADEMY" width={110} height={55} className="object-contain" />
+            </motion.div>
           </div>
         </div>
       </section>

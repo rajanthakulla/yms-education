@@ -37,21 +37,21 @@ export default function FloatingActions() {
     {
       icon: 'call',
       label: 'Call Us',
-      href: 'tel:+97714232155',
+      href: 'tel:+9779767220276',
       isPulse: false,
       color: 'bg-[#0097A7]',
     },
     {
       icon: 'chat',
       label: 'WhatsApp',
-      href: 'https://wa.me/9779800000000',
+      href: 'https://wa.me/9779767220276',
       isPulse: false,
       color: 'bg-[#25D366]', // WhatsApp Green
     },
   ];
 
   return (
-    <div className="fixed bottom-8 right-8 z-[90] flex flex-col gap-4">
+    <div className="fixed bottom-8 right-2 md:right-4 z-[90] flex flex-col gap-4">
       {actions.map((action, index) => {
         const isExternal = action.href.startsWith('http') || action.href.startsWith('tel');
         

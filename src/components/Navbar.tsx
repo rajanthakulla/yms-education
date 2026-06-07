@@ -139,7 +139,7 @@ export default function Navbar() {
                     BOOK FREE COUNSELING
                   </Link>
                   <a
-                    href="https://wa.me/9779800000000"
+                    href="https://wa.me/9779767220276"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-bold"

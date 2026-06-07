@@ -94,15 +94,15 @@ export default function Footer() {
             <ul className="flex flex-col gap-4 font-noto-sans text-sm">
               <li className="flex items-start gap-3 text-white/90">
                 <span className="material-symbols-outlined text-[#E8192C]">location_on</span>
-                <span>Bagbazar-28, Kathmandu<br/>Nepal</span>
+                <span>New Baneshwor, Kanti Galli,<br/>Opposite to Pani Tanki, 44600</span>
               </li>
               <li className="flex items-center gap-3 text-white/90">
                 <span className="material-symbols-outlined text-[#E8192C]">call</span>
-                <span>+977-1-4232155</span>
+                <span>01-5921908 / 9767220276</span>
               </li>
               <li className="flex items-center gap-3 text-white/90">
                 <span className="material-symbols-outlined text-[#E8192C]">mail</span>
-                <a href="mailto:info@yms.edu.np" className="hover:text-white hover:underline">info@yms.edu.np</a>
+                <a href="mailto:educationyms@gmail.com" className="hover:text-white hover:underline">educationyms@gmail.com</a>
               </li>
             </ul>
           </motion.div>

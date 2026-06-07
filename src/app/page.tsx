@@ -49,8 +49,48 @@ const FALLBACK_TESTIMONIALS: Testimonial[] = [
   }
 ];
 
+const FALLBACK_GALLERY_ITEMS = [
+  {
+    id: 1,
+    title: "Language Program Certification",
+    subtitle: "Students receiving course completion certificates",
+    img: "/images/gallery/certification-1.jpg"
+  },
+  {
+    id: 2,
+    title: "JLPT Certificate Distribution",
+    subtitle: "Celebrating student successes in the JLPT exam",
+    img: "/images/gallery/certification-2.jpg"
+  },
+  {
+    id: 3,
+    title: "Interactive Study Sessions",
+    subtitle: "A look inside our modern language classrooms",
+    img: "/images/gallery/college-1.jpg"
+  },
+  {
+    id: 4,
+    title: "Orientation Seminars",
+    subtitle: "Students participating in cultural exchange orientations",
+    img: "/images/gallery/event-1.jpg"
+  },
+  {
+    id: 5,
+    title: "Annual Cultural Festivities",
+    subtitle: "Celebrating traditional Japanese cultural events",
+    img: "/images/gallery/event-2.jpg"
+  },
+  {
+    id: 6,
+    title: "Pre-departure Orientation Program",
+    subtitle: "Preparing students for their upcoming academic journey",
+    img: "/images/gallery/event-3.jpg"
+  }
+];
+
 export default function Home() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [galleryItems, setGalleryItems] = useState<any[]>([]);
 
   useEffect(() => {
     async function fetchTestimonials() {
@@ -64,7 +104,19 @@ export default function Home() {
         console.error('Error fetching testimonials:', error);
       }
     }
+    async function fetchGallery() {
+      try {
+        const res = await fetch('/api/gallery?published=1');
+        if (res.ok) {
+          const data = await res.json();
+          setGalleryItems(data.gallery || []);
+        }
+      } catch (error) {
+        console.error('Error fetching gallery:', error);
+      }
+    }
     fetchTestimonials();
+    fetchGallery();
   }, []);
 
   return (
@@ -218,25 +270,25 @@ export default function Home() {
           <p className="text-[12px] font-bold text-[#1B2A6B] uppercase tracking-[0.15em] mb-8 font-[family-name:var(--font-dm-sans)]">
             In Partnership With
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14 max-w-5xl">
-            <div className="hover:scale-105 transition-transform duration-300">
-              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" width={128} height={64} className="object-contain mix-blend-multiply" />
+          <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-10 max-w-6xl w-full">
+            <div className="hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Image src="/images/partners/yamasa-logo.png" alt="YAMASA" width={110} height={55} className="object-contain mix-blend-multiply" />
             </div>
-            <div className="hover:scale-105 transition-transform duration-300">
-              <Image src="/images/partners/egao-logo.png" alt="EGAO" width={128} height={64} className="object-contain mix-blend-multiply" />
+            <div className="hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Image src="/images/partners/egao-logo.png" alt="EGAO" width={110} height={55} className="object-contain mix-blend-multiply" />
             </div>
-            <span className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-[#cfd6df] tracking-tight hover:text-[#1B2A6B] transition-colors cursor-default select-none text-center max-w-[180px] leading-tight">
-              NEPAL MANPOWER
-            </span>
-            <span className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-[#cfd6df] tracking-tight hover:text-[#1B2A6B] transition-colors cursor-default select-none text-center max-w-[240px] leading-tight">
-              REMNANT JAPANESE LANGUAGE SCHOOL
-            </span>
-            <span className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-[#cfd6df] tracking-tight hover:text-[#1B2A6B] transition-colors cursor-default select-none text-center max-w-[240px] leading-tight">
-              KAWAHARA E-BUSINESS COLLEGE
-            </span>
-            <span className="font-[family-name:var(--font-dm-sans)] font-black text-xl md:text-2xl text-[#cfd6df] tracking-tight hover:text-[#1B2A6B] transition-colors cursor-default select-none text-center max-w-[220px] leading-tight">
-              AICHI INT&apos;L ACADEMY
-            </span>
+            <div className="hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Image src="/images/partners/nepal-manpower-logo.png" alt="NEPAL MANPOWER" width={110} height={55} className="object-contain" />
+            </div>
+            <div className="hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Image src="/images/partners/remnant-logo.png" alt="REMNANT JAPANESE LANGUAGE SCHOOL" width={120} height={55} className="object-contain" />
+            </div>
+            <div className="hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Image src="/images/partners/kawahara-logo.png" alt="KAWAHARA E-BUSINESS COLLEGE" width={125} height={55} className="object-contain" />
+            </div>
+            <div className="hover:scale-105 transition-transform duration-300 flex-shrink-0">
+              <Image src="/images/partners/aichi-logo.png" alt="AICHI INT'L ACADEMY" width={110} height={55} className="object-contain" />
+            </div>
           </div>
         </div>
       </motion.section>
@@ -295,7 +347,7 @@ export default function Home() {
                 </li>
                 <li className="flex gap-2">
                   <span className="material-symbols-outlined text-[#0097A7] text-[20px]">location_on</span>
-                  <strong>Address:</strong> Bagbazar-28, Kathmandu, Nepal
+                  <strong>Address:</strong> New Baneshwor, Kanti Galli, Opposite to Pani Tanki, 44600
                 </li>
                 <li className="flex gap-2">
                   <span className="material-symbols-outlined text-[#0097A7] text-[20px]">person</span>
@@ -530,10 +582,10 @@ export default function Home() {
 
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[
-            { name: "Bikram Khadka", title: "Representative Director", jp: "代表取締役", border: "border-t-[#E8192C]", img: "/images/team/founder.jpeg" },
-            { name: "Dal Bahadur Karki", title: "Director", jp: "取締役", border: "border-t-[#1B2A6B]", img: "/images/team/dal-bahadur-karki.jpeg" },
-            { name: "Nabin Bohara", title: "Japanese Lang Teacher", jp: "日本語教師", border: "border-t-[#E8192C]", img: "/images/team/nabin_bohora.jpeg" },
-            { name: "Sujata Raut", title: "Language Instructor", jp: "日本語教師", border: "border-t-[#1B2A6B]", img: "/images/team/sujata-raut.jpeg" },
+            { name: "Bikram Khadka", title: "CEO", jp: "代表取締役/CEO", border: "border-t-[#E8192C]", img: "/images/team/founder.jpeg" },
+            { name: "Dik Bahadur Budhathoki", title: "Director / Japan Coordinator", jp: "取締役/日本コーディネーター", border: "border-t-[#1B2A6B]", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&fit=crop" },
+            { name: "Dal Bahadur Karki", title: "Director", jp: "取締役", border: "border-t-[#0097A7]", img: "/images/team/dal-bahadur-karki.jpeg" },
+            { name: "Priya Bhattarai", title: "Documentation", jp: "ドキュメンテーション", border: "border-t-[#E8192C]", img: "/images/team/priya-bhattarai-v2.jpeg" },
           ].map((member, index) => (
             <motion.div
               key={index}
@@ -763,16 +815,9 @@ export default function Home() {
         </div>
 
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
-          {[
-            { title: "Vibrant Campus Life", subtitle: "Building friendships & futures", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=600&h=450&fit=crop" },
-            { title: "Gateway to Japan", subtitle: "Explore modern cities & traditions", img: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=600&h=450&fit=crop" },
-            { title: "Interactive Classes", subtitle: "Mastering Japanese with experts", img: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=600&h=450&fit=crop" },
-            { title: "Cultural Heritage", subtitle: "Immerse in Japan's rich history", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=600&h=450&fit=crop" },
-            { title: "Collaborative Study", subtitle: "Peer support & mock interviews", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=600&h=450&fit=crop" },
-            { title: "Success & Support", subtitle: "Guidance every step of the way", img: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=600&h=450&fit=crop" },
-          ].map((item, index) => (
+          {(galleryItems.length > 0 ? galleryItems.slice(0, 6) : FALLBACK_GALLERY_ITEMS).map((item, index) => (
             <motion.div
-              key={index}
+              key={item.id || index}
               className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-md group cursor-pointer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -791,7 +836,7 @@ export default function Home() {
                   {item.title}
                 </h3>
                 <p className="text-gray-200 text-sm font-medium font-nunito-sans mt-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                  {item.subtitle}
+                  {item.desc || item.subtitle}
                 </p>
               </div>
             </motion.div>

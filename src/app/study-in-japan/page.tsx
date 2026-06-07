@@ -41,7 +41,7 @@ export default function StudyInJapan() {
             transition={{ duration: 0.25 }}
           >
             <Image 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBN9RsZp5dWbVyhfA0404o4AxWl2I2zu7IiP9mwpOU3XpOKDSNxLARW7cQXg9q1iKkMqleaTn1bmHQc7kWj6ZrPQinrOkXQZwCg-g0dJ_Sj48KaM0r_h7H4H_1fOMcke79TojFOdwCFQj89wLz9aKrrS38Ywlqy5PCi--7Jqs1SnK-e36SQCTunqXURbVOOCgRQ8Ue-j1sAHTO4Z6hEYq-_TRWCTRPQNMU3oEujksLCCQj6LzGjyk2WciYau_8op1Lj-WVxu5W7k9I"
+              src="/images/study-in-japan.png"
               alt="Study in Japan"
               fill
               className="object-cover"
@@ -139,12 +139,12 @@ export default function StudyInJapan() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
-            <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-8 border-white/10 shadow-[0_0_50px_rgba(0,151,167,0.3)]">
+            <div className="relative w-80 h-80 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-8 border-white/10 bg-white shadow-[0_0_50px_rgba(0,151,167,0.3)]">
               <Image 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4TghGMb2BtkzLef9bL8w5DtR1ml16Pj4D65ngf8VG42rJo6amzO__jz8DF5dtE9EZPUJsZX9tpRzZEnbxsdp86Y64zC3vlVSHVuDUC3XifF-Bas8Ok0MXw75ajExorySeRKKO4vHiYoVwhfumHlYOiZmCt9jnOs8d_514Exko-cpyHjk-hReWt2rgATfDsZfgnjtJLr761lpKTEMZZGDLzVX3p0jhcMqXj-z8zPhqRPC9U3y0aOaGCP8zRwf1QCf-GeWP-NaFL9_7"
-                alt="YAMASA Student"
+                src="/images/partners/yamasa-logo.png"
+                alt="YAMASA Logo"
                 fill
-                className="object-cover"
+                className="object-contain p-12"
               />
             </div>
           </motion.div>
