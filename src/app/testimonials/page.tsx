@@ -73,7 +73,7 @@ export default function Testimonials() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Real experiences from students who have realized their dreams of studying and working in Japan through YMS Education. Your journey to the Land of the Rising Sun starts with these authentic narratives.
+            Real experiences from students who have realized their dreams of studying in Japan through YMS Education. Your journey to the Land of the Rising Sun starts with these authentic narratives.
           </motion.p>
         </div>
       </section>
