@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ImageUpload from '@/components/ImageUpload';
 
 export default function ManageTestimonials() {
   const [testimonials, setTestimonials] = useState<any[]>([]);
@@ -238,9 +239,8 @@ export default function ManageTestimonials() {
                     </div>
                   </div>
 
-                  <div>
-                    <label className="block text-sm font-bold text-[#1B2A6B] mb-2">Photo URL</label>
-                    <input type="text" value={photo} onChange={(e) => setPhoto(e.target.value)} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#0097A7]" placeholder="https://..." />
+                  <div className="col-span-full">
+                    <ImageUpload value={photo} onChange={setPhoto} label="Student Photo" />
                   </div>
 
                   <div>

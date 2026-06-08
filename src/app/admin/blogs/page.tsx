@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ImageUpload from '@/components/ImageUpload';
 
 export default function ManageBlogs() {
   const [blogs, setBlogs] = useState<any[]>([]);
@@ -226,9 +227,8 @@ export default function ManageBlogs() {
                         <option value="Student Life">Student Life</option>
                       </select>
                     </div>
-                    <div>
-                      <label className="block text-sm font-bold text-[#1B2A6B] mb-2">Thumbnail URL</label>
-                      <input type="text" value={thumbnail} onChange={(e) => setThumbnail(e.target.value)} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#E8192C]" placeholder="https://..." />
+                    <div className="col-span-full">
+                      <ImageUpload value={thumbnail} onChange={setThumbnail} label="Thumbnail" />
                     </div>
                   </div>
 

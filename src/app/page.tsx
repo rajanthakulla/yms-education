@@ -231,17 +231,13 @@ export default function Home() {
         <div className="max-w-[1280px] mx-auto px-5 md:px-[80px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: Stats */}
-            <div className="grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div className="grid grid-cols-2 gap-4 text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start space-y-2">
                 <span className="font-[family-name:var(--font-playfair)] text-[32px] lg:text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={100} />+</span>
                 <span className="font-[family-name:var(--font-dm-sans)] text-[12px] lg:text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Students</span>
               </div>
               <div className="flex flex-col items-center lg:items-start space-y-2 border-l border-gray-200 pl-4 lg:pl-6">
-                <span className="font-[family-name:var(--font-playfair)] text-[32px] lg:text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={5} />+</span>
-                <span className="font-[family-name:var(--font-dm-sans)] text-[12px] lg:text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Partner Schools</span>
-              </div>
-              <div className="flex flex-col items-center lg:items-start space-y-2 border-l border-gray-200 pl-4 lg:pl-6">
-                <span className="font-[family-name:var(--font-playfair)] text-[32px] lg:text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={2} />+</span>
+                <span className="font-[family-name:var(--font-playfair)] text-[32px] lg:text-[40px] leading-[1.2] font-bold text-[#E8192C]"><Counter to={3} />+</span>
                 <span className="font-[family-name:var(--font-dm-sans)] text-[12px] lg:text-[14px] font-medium leading-[1.4] tracking-[0.05em] text-[#475569] uppercase">Yrs Experience</span>
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ImageUpload from '@/components/ImageUpload';
 
 interface GalleryItem {
   id: number;
@@ -284,35 +285,13 @@ export default function ManageGallery() {
                       </select>
                     </div>
 
-                    <div>
-                      <label className="block text-sm font-bold text-[#1B2A6B] mb-2">Image Path / URL *</label>
-                      <input
-                        type="text"
-                        value={img}
-                        onChange={(e) => setImg(e.target.value)}
-                        required
-                        placeholder="e.g. /images/gallery/success-1.jpg"
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-[#0097A7]"
-                      />
+                    <div className="col-span-full">
+                      <ImageUpload value={img} onChange={setImg} label="Gallery Image" />
                     </div>
                   </div>
 
                   {/* Image Live Preview */}
-                  {img && (
-                    <div className="p-4 border border-dashed border-gray-200 rounded-xl bg-gray-50">
-                      <span className="block text-xs font-bold text-gray-500 mb-2 uppercase tracking-wide">Live Preview Check</span>
-                      <div className="relative h-48 w-full max-w-sm rounded-lg overflow-hidden bg-gray-200 border border-gray-300">
-                        <img
-                          src={img}
-                          alt="Live Preview"
-                          className="w-full h-full object-cover"
-                          onError={(e) => {
-                            (e.target as HTMLImageElement).src = 'https://placehold.co/600x400?text=Invalid+Image+URL+or+Path';
-                          }}
-                        />
-                      </div>
-                    </div>
-                  )}
+
 
                   <div>
                     <label className="block text-sm font-bold text-[#1B2A6B] mb-2">Description / Caption</label>
