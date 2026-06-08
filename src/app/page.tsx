@@ -169,7 +169,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.25 }}
             >
-              Your dedicated partner in navigating the journey to study and work in Japan. We provide expert guidance, transparent processes, and unwavering support to turn your academic aspirations into reality.
+              Your dedicated partner in navigating the journey to study in Japan. We provide expert guidance, transparent processes, and unwavering support to turn your academic aspirations into reality.
             </motion.p>
             
             <motion.div 
