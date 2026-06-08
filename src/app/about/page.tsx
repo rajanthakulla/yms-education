@@ -233,6 +233,58 @@ export default function AboutUs() {
         </div>
       </SectionWrapper>
 
+      {/* --- Section: Our Special Features --- */}
+      <SectionWrapper id="special-features" bgColor="bg-[#f0f4f8]" className="relative z-10 py-24">
+        <div className="max-w-[1280px] mx-auto text-center mb-16">
+          <TwoToneHeading firstText="Our" secondText="Special Features" className="text-4xl md:text-5xl" />
+        </div>
+
+        <div className="max-w-[1280px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+          {[
+            {
+              title: "Online Class by Native Teacher",
+              desc: "Interactive language classes conducted by native Japanese teachers, three days a week.",
+              icon: "record_voice_over",
+              color: "text-[#E8192C]",
+              bg: "bg-[#ffdad7]",
+              borderColor: "border-t-[#E8192C]"
+            },
+            {
+              title: "End-to-End Application Support",
+              desc: "We provide comprehensive assistance from your initial counseling up to your visa approval.",
+              icon: "assignment_turned_in",
+              color: "text-[#1B2A6B]",
+              bg: "bg-[#a7b5fe]/30",
+              borderColor: "border-t-[#1B2A6B]"
+            },
+            {
+              title: "Support Beyond Departure",
+              desc: "Our dedication doesn't stop. We will be available to assist and support you in Japan too.",
+              icon: "flight_land",
+              color: "text-[#0097A7]",
+              bg: "bg-[#97f0ff]/50",
+              borderColor: "border-t-[#0097A7]"
+            },
+            {
+              title: "Study, Work & Career Guidance",
+              desc: "Expert advice on balancing your education, part-time jobs, and building your future career.",
+              icon: "work",
+              color: "text-[#E8192C]",
+              bg: "bg-[#ffdad7]",
+              borderColor: "border-t-[#E8192C]"
+            }
+          ].map((feature, index) => (
+            <AnimatedCard key={index} delay={index * 0.1} className={`p-8 text-center flex flex-col items-center shadow-lg bg-white border-t-4 ${feature.borderColor}`}>
+              <div className={`w-20 h-20 rounded-full flex items-center justify-center mb-6 ${feature.bg} ${feature.color}`}>
+                <span className="material-symbols-outlined text-4xl">{feature.icon}</span>
+              </div>
+              <h3 className="text-xl font-bold font-nunito text-[#1B2A6B] mb-4">{feature.title}</h3>
+              <p className="text-[#334155]">{feature.desc}</p>
+            </AnimatedCard>
+          ))}
+        </div>
+      </SectionWrapper>
+
       {/* --- Section 4: Meet Our Team --- */}
       <SectionWrapper id="team" bgColor="bg-transparent" className="relative z-10">
         <div className="max-w-[1280px] mx-auto text-center mb-16">
