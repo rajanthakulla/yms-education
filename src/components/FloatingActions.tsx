@@ -23,7 +23,7 @@ export default function FloatingActions() {
     {
       icon: 'location_on',
       label: 'Find Us',
-      href: '/contact',
+      href: 'https://maps.google.com/?q=YMS+Education+Foundation+Pvt.+Ltd.,+New+Baneshwor,+Kathmandu',
       isPulse: false,
       color: 'bg-[#0097A7]',
     },
