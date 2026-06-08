@@ -243,7 +243,7 @@ export default function AboutUs() {
           {[
             { name: "Bikram Khadka", role: "CEO", img: "/images/team/founder.jpeg" },
             { name: "Dik Bahadur Budhathoki", role: "Director / Japan Coordinator", img: "/images/team/dal-bahadur-karki.jpeg" },
-            { name: "Dal Bahadur Karki", role: "Director", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&fit=crop" },
+            { name: "Dal Bahadur Karki", role: "Director", img: "/images/team/dal-bahadur.png" },
             { name: "Nabin Bohara", role: "Teacher", img: "/images/team/nabin_bohora.jpeg" },
             { name: "Sujata Raut", role: "Teacher", img: "/images/team/sujata-raut.jpeg" },
             { name: "Priya Bhattarai", role: "Documentation Officer", img: "/images/team/priya-bhattarai-v2.jpeg" },

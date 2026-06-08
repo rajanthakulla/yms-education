@@ -563,7 +563,7 @@ export default function Home() {
           {[
             { name: "Bikram Khadka", title: "CEO", jp: "代表取締役/CEO", border: "border-t-[#E8192C]", img: "/images/team/founder.jpeg" },
             { name: "Dik Bahadur Budhathoki", title: "Director / Japan Coordinator", jp: "取締役/日本コーディネーター", border: "border-t-[#1B2A6B]", img: "/images/team/dal-bahadur-karki.jpeg" },
-            { name: "Dal Bahadur Karki", title: "Director", jp: "取締役", border: "border-t-[#0097A7]", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=400&h=400&fit=crop" },
+            { name: "Dal Bahadur Karki", title: "Director", jp: "取締役", border: "border-t-[#0097A7]", img: "/images/team/dal-bahadur.png" },
             { name: "Priya Bhattarai", title: "Documentation Officer", jp: "ドキュメンテーション", border: "border-t-[#E8192C]", img: "/images/team/priya-bhattarai-v2.jpeg" },
           ].map((member, index) => (
             <motion.div
